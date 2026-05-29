@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Clinical Classification Output",
+  "type": "object",
+  "required": [
+    "primary_specialty",
+    "secondary_specialties",
+    "confidence",
+    "scores",
+    "matched_terms",
+    "negative_matches",
+    "suggested_obsidian_folder",
+    "classification_reason_summary"
+  ],
+  "properties": {
+    "primary_specialty": {"type": "string"},
+    "secondary_specialties": {"type": "array", "items": {"type": "string"}},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "scores": {
+      "type": "object",
+      "additionalProperties": {"type": "number"}
+    },
+    "matched_terms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["term", "specialty", "category", "section", "weight"],
+        "properties": {
+          "term": {"type": "string"},
+          "specialty": {"type": "string"},
+          "category": {"type": "string"},
+          "section": {"type": "string"},
+          "weight": {"type": "number"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "negative_matches": {"type": "array", "items": {"type": "object"}},
+    "suggested_obsidian_folder": {"type": "string"},
+    "classification_reason_summary": {"type": "string"}
+  },
+  "additionalProperties": true
+}

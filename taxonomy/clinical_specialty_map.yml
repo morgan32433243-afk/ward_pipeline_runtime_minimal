@@ -1,0 +1,1677 @@
+version: '1.0'
+taxonomy_type: clinical_specialty_map
+description: Phase 1 keyword foundation extracted from existing ward_pipeline classifiers.
+  Search routing only; not diagnostic confirmation.
+specialties:
+  cardiology:
+    display_name: 心臟內科
+    obsidian_folder: Medicine/Cardiology
+    strong_keywords:
+    - stemi
+    - nstemi
+    - st elevation
+    - acute coronary syndrome
+    - acs
+    - myocardial infarction
+    - unstable angina
+    - stable angina
+    - coronary artery disease
+    - ischemic cardiomyopathy
+    - heart failure
+    - acute decompensated heart failure
+    - hfref
+    - hfpef
+    - pulmonary edema
+    - cardiogenic shock
+    - atrial fibrillation
+    - atrial flutter
+    - supraventricular tachycardia
+    - ventricular tachycardia
+    - bradycardia
+    - sick sinus syndrome
+    - complete heart block
+    - myocarditis
+    - pericarditis
+    - infective endocarditis
+    - valvular heart disease
+    - aortic stenosis
+    - mitral regurgitation
+    - hypertensive emergency
+    - pulmonary hypertension
+    - cardiac tamponade
+    - percutaneous coronary intervention
+    - atrial fibrillation with rapid ventricular response
+    - aortic dissection
+    - 心肌梗塞
+    - 心衰竭
+    aliases:
+    - cardiology
+    - cardio
+    - cv
+    - cvs
+    - pci
+    - cath
+    - cabg
+    - cad
+    - chd
+    - mi
+    - ami
+    - acs
+    - stemi
+    - nstemi
+    - hf
+    - chf
+    - adhf
+    - hfref
+    - hfpef
+    - af
+    - afib
+    - af rvr
+    - afl
+    - svt
+    - vt
+    - ppm
+    - icd
+    weak_clues:
+    - ecg
+    - ekg
+    - 心電圖
+    - troponin
+    - troponin 上升
+    - 肌鈣蛋白上升
+    - bnp
+    - nt-probnp
+    - ck-mb
+    - pci
+    - coronary angiography
+    - echo
+    - ejection fraction
+    - pulmonary edema
+    - beta blocker
+    - nitroglycerin
+    - aspirin
+    - clopidogrel
+    - heparin
+    - doac
+    - warfarin
+    - furosemide
+    - amiodarone
+    medications: []
+    labs_imaging: []
+    procedures: []
+    negative_context: []
+    legacy_aliases: []
+    obsidian_keywords:
+    - heart failure
+    - stemi
+    - nstemi
+    - atrial fibrillation with rapid ventricular response
+    - coronary artery disease
+    - percutaneous coronary intervention
+  pulmonology:
+    display_name: 胸腔內科
+    obsidian_folder: Medicine/Pulmonology
+    strong_keywords:
+    - pneumonia
+    - community acquired pneumonia
+    - hospital acquired pneumonia
+    - aspiration pneumonia
+    - pneumocystis pneumonia
+    - hypoxemia
+    - hypoxemic
+    - respiratory failure
+    - acute respiratory failure
+    - hypercapnic respiratory failure
+    - acute respiratory distress syndrome
+    - pulmonary embolism
+    - copd
+    - copd exacerbation
+    - asthma
+    - asthma exacerbation
+    - pleural effusion
+    - pneumothorax
+    - hemothorax
+    - pulmonary edema
+    - interstitial lung disease
+    - pulmonary fibrosis
+    - bronchiectasis
+    - tuberculosis
+    - lung cancer
+    - lung mass
+    - pulmonary nodule
+    - obstructive sleep apnea
+    - obesity hypoventilation syndrome
+    - pulmonary hypertension
+    - empyema
+    - hemoptysis
+    - atelectasis
+    - 肺炎
+    - 低氧
+    - 肺栓塞
+    - 氣胸
+    aliases:
+    - pulm
+    - pulmonary
+    - chest
+    - respi
+    - respiratory
+    - pe
+    - pte
+    - copd
+    - coad
+    - asthma
+    - ae-copd
+    - aecopd
+    - cap
+    - hap
+    - vap
+    - pna
+    - pjp
+    - pcp
+    - ild
+    - osa
+    - ohs
+    - ards
+    - rf
+    - arf
+    - hfno
+    - bipap
+    - cpap
+    - nc
+    - nrm
+    weak_clues:
+    - spo2
+    - oxygen
+    - nasal cannula
+    - nrm
+    - high flow nasal cannula
+    - hfno
+    - bipap
+    - cpap
+    - abg
+    - paco2
+    - pao2
+    - ctpa
+    - d dimer
+    - d-dimer
+    - chest x-ray
+    - cxr
+    - chest ct
+    - interstitial infiltrates
+    - wheezing
+    - crackles
+    - bronchodilator
+    - steroid
+    - ceftriaxone
+    - azithromycin
+    - piperacillin-tazobactam
+    medications: []
+    labs_imaging: []
+    procedures: []
+    negative_context: []
+    legacy_aliases: []
+    obsidian_keywords:
+    - copd
+    - asthma exacerbation
+    - pneumonia
+    - pleural effusion
+    - respiratory failure
+  gastroenterology_hepatology:
+    display_name: 胃腸肝膽科
+    obsidian_folder: Medicine/Gastroenterology_Hepatology
+    strong_keywords:
+    - upper gi bleed
+    - lower gi bleed
+    - gi bleed
+    - hematemesis
+    - melena
+    - hematochezia
+    - peptic ulcer disease
+    - gastritis
+    - esophagitis
+    - gastroesophageal reflux disease
+    - inflammatory bowel disease
+    - crohn disease
+    - ulcerative colitis
+    - infectious colitis
+    - diverticulitis
+    - bowel obstruction
+    - ileus
+    - colonoscopy
+    - endoscopy
+    - hepatitis
+    - acute hepatitis
+    - chronic hepatitis b
+    - chronic hepatitis c
+    - acute liver failure
+    - cirrhosis
+    - decompensated cirrhosis
+    - hepatic encephalopathy
+    - spontaneous bacterial peritonitis
+    - esophageal varices
+    - variceal bleeding
+    - cholangitis
+    - cholecystitis
+    - choledocholithiasis
+    - pancreatitis
+    - acute pancreatitis
+    - hepatocellular carcinoma
+    - hcc
+    - ascites
+    - 黃疸
+    - 肝炎
+    - 肝衰竭
+    - 肝硬化
+    - 肝昏迷
+    - 膽管炎
+    - 膽囊炎
+    - 總膽管結石
+    - 胰臟炎
+    - 肝癌
+    - 吐血
+    - 黑便
+    aliases:
+    - gi
+    - gastro
+    - gastroenterology
+    - hepatology
+    - hepatobiliary
+    - hbp
+    - liver
+    - liver team
+    - ugib
+    - lgib
+    - gib
+    - pud
+    - gerd
+    - ibd
+    - cd
+    - uc
+    - hbv
+    - hcv
+    - cirrhosis
+    - sbp
+    - ev
+    - evl
+    - ercp
+    - egd
+    - ebd
+    - eus
+    - hcc
+    - he
+    weak_clues:
+    - jaundice
+    - bilirubin
+    - direct bilirubin
+    - ast
+    - alt
+    - alkaline phosphatase
+    - alp
+    - ggt
+    - inr
+    - ammonia
+    - lipase
+    - amylase
+    - hb 下降
+    - hemoglobin drop
+    - occult blood
+    - transfusion
+    - ppi
+    - octreotide
+    - lactulose
+    - rifaximin
+    - ceftriaxone
+    - albumin
+    - abdominal ultrasound
+    - ercp
+    - endoscopy
+    - colonoscopy
+    medications: []
+    labs_imaging: []
+    procedures: []
+    negative_context: []
+    legacy_aliases:
+    - gastroenterology
+    - hepatobiliary_pancreatic
+    obsidian_keywords:
+    - gi bleed
+    - melena
+    - hematemesis
+    - cirrhosis
+    - ascites
+    - colonoscopy
+    subcategories:
+    - id: gastroenterology
+      keywords:
+      - upper gi bleed
+      - gi bleed
+      - hematemesis
+      - melena
+      - colonoscopy
+      - endoscopy
+      - 吐血
+      - 黑便
+    - id: hepatobiliary_pancreatic
+      keywords:
+      - hepatitis
+      - acute liver failure
+      - cirrhosis
+      - cholangitis
+      - cholecystitis
+      - choledocholithiasis
+      - pancreatitis
+      - hcc
+      - 黃疸
+      - 肝硬化
+      - 膽管炎
+      - 胰臟炎
+  nephrology:
+    display_name: 腎臟內科
+    obsidian_folder: Medicine/Nephrology
+    strong_keywords:
+    - acute kidney injury
+    - chronic kidney disease
+    - end stage renal disease
+    - acute tubular necrosis
+    - prerenal azotemia
+    - glomerulonephritis
+    - nephrotic syndrome
+    - nephritic syndrome
+    - lupus nephritis
+    - diabetic kidney disease
+    - hypertensive nephrosclerosis
+    - obstructive uropathy
+    - hydronephrosis
+    - renal artery stenosis
+    - polycystic kidney disease
+    - aki
+    - ckd
+    - hyperkalemia
+    - hypokalemia
+    - hyponatremia
+    - hypernatremia
+    - metabolic acidosis
+    - renal tubular acidosis
+    - uremia
+    - fluid overload
+    - proteinuria
+    - hematuria
+    - dialysis
+    - hemodialysis
+    - peritoneal dialysis
+    - 高血鉀
+    - 腎衰竭
+    - 洗腎
+    aliases:
+    - renal
+    - nephro
+    - nephrology
+    - kidney
+    - aki
+    - ckd
+    - esrd
+    - eskd
+    - hd
+    - ihd
+    - cvvh
+    - crrt
+    - pd
+    - capd
+    - avf
+    - avg
+    - permcath
+    - tdc
+    - rrt
+    - gn
+    - ns
+    - rta
+    - dkD
+    - upcr
+    - acr
+    - ua
+    weak_clues:
+    - creatinine
+    - bun
+    - egfr
+    - potassium
+    - 鉀
+    - sodium
+    - bicarbonate
+    - anion gap
+    - urine sodium
+    - feNa
+    - urinalysis
+    - proteinuria
+    - hematuria
+    - upcr
+    - acr
+    - renal ultrasound
+    - hydronephrosis
+    - peaked t
+    - wide qrs
+    - calcium gluconate
+    - insulin glucose
+    - sodium bicarbonate
+    - lokelma
+    - kayexalate
+    - furosemide
+    medications: []
+    labs_imaging: []
+    procedures: []
+    negative_context: []
+    legacy_aliases: []
+    obsidian_keywords:
+    - hemodialysis
+    - acute kidney injury
+    - chronic kidney disease
+    - hyperkalemia
+    - uremia
+  endocrinology:
+    display_name: 新陳代謝內分泌科
+    obsidian_folder: Medicine/Endocrinology
+    strong_keywords:
+    - diabetes mellitus
+    - type 1 diabetes
+    - type 2 diabetes
+    - dka
+    - hhs
+    - diabetic ketoacidosis
+    - hyperosmolar hyperglycemic state
+    - hyperosmolar
+    - hypoglycemia
+    - severe hyperglycemia
+    - thyroid storm
+    - myxedema coma
+    - hyperthyroidism
+    - hypothyroidism
+    - graves disease
+    - thyroiditis
+    - adrenal insufficiency
+    - adrenal crisis
+    - cushing syndrome
+    - pheochromocytoma
+    - primary aldosteronism
+    - hypercalcemia
+    - hypocalcemia
+    - hyponatremia
+    - siadh
+    - diabetes insipidus
+    - pituitary apoplexy
+    - ketoacidosis
+    - 酮酸中毒
+    - 高血糖高滲
+    - 低血糖
+    aliases:
+    - endo
+    - endocrine
+    - diabetes
+    - dm
+    - t1dm
+    - t2dm
+    - iddm
+    - niddm
+    - dka
+    - hhs
+    - hhonK
+    - bg
+    - sugar
+    - ac
+    - hs
+    - qac
+    - qhs
+    - thyroid
+    - tsh
+    - ft4
+    - ai
+    - siadh
+    - di
+    - pth
+    - glp1
+    - sglt2
+    - dpp4
+    weak_clues:
+    - glucose
+    - blood glucose
+    - fingerstick
+    - hba1c
+    - insulin
+    - insulin drip
+    - sliding scale
+    - beta hydroxybutyrate
+    - ketone
+    - 酮體
+    - anion gap
+    - ph 下降
+    - bicarbonate
+    - serum osmolality
+    - tsh
+    - free t4
+    - cortisol
+    - acth
+    - calcium
+    - pth
+    - sodium
+    - urine osmolality
+    - desmopressin
+    - hydrocortisone
+    - methimazole
+    - levothyroxine
+    medications: []
+    labs_imaging: []
+    procedures: []
+    negative_context: []
+    legacy_aliases: []
+  infectious_disease:
+    display_name: 感染科
+    obsidian_folder: Medicine/Infectious_Disease
+    strong_keywords:
+    - sepsis
+    - septic shock
+    - bacteremia
+    - fungemia
+    - fever of unknown origin
+    - cellulitis
+    - necrotizing fasciitis
+    - pneumonia
+    - urinary tract infection
+    - pyelonephritis
+    - intra abdominal infection
+    - cholangitis
+    - infective endocarditis
+    - meningitis
+    - encephalitis
+    - osteomyelitis
+    - septic arthritis
+    - diabetic foot infection
+    - catheter related bloodstream infection
+    - clostridioides difficile infection
+    - tuberculosis
+    - covid-19
+    - influenza
+    - herpes zoster
+    - hiv
+    - opportunistic infection
+    - pneumocystis
+    - pneumocystis jirovecii pneumonia
+    - pcp
+    - neutropenic fever
+    - 敗血症
+    - 感染性休克
+    aliases:
+    - id
+    - infectious disease
+    - infection
+    - sepsis
+    - bacteremia
+    - bsi
+    - crbsi
+    - clabsi
+    - uti
+    - cap
+    - hap
+    - vap
+    - cdi
+    - c diff
+    - tb
+    - hiv
+    - aids
+    - oi
+    - pjp
+    - pcp
+    - covid
+    - flu
+    - hsv
+    - vzv
+    - mrsa
+    - vre
+    - esbl
+    - cre
+    - mdro
+    - abx
+    negative_context:
+    - burn injury
+    - scald injury
+    - scald burn
+    - thermal injury
+    - burn wound
+    - 燙傷
+    - 燒燙傷
+    weak_clues:
+    - fever
+    - wbc
+    - crp
+    - procalcitonin
+    - lactate
+    - 乳酸
+    - blood culture
+    - urine culture
+    - sputum culture
+    - wound culture
+    - gram stain
+    - cd4
+    - hiv combo test
+    - viral load
+    - antibiotic
+    - ceftriaxone
+    - vancomycin
+    - piperacillin-tazobactam
+    - meropenem
+    - cefepime
+    - metronidazole
+    - tmp-smx
+    - acyclovir
+    medications: []
+    labs_imaging: []
+    procedures: []
+    negative_context: []
+    legacy_aliases:
+    - infectious-disease
+    obsidian_keywords:
+    - bacteremia
+    - sepsis
+    - septic shock
+    - antibiotic
+    - blood culture
+    - infective endocarditis
+  hematology_oncology:
+    display_name: 血液腫瘤科
+    obsidian_folder: Medicine/Hematology_Oncology
+    strong_keywords:
+    - leukemia
+    - lymphoma
+    - multiple myeloma
+    - neutropenic fever
+    - febrile neutropenia
+    - chemotherapy
+    - pancytopenia
+    - thrombocytopenia
+    - anemia
+    - hemolytic anemia
+    - iron deficiency anemia
+    - aplastic anemia
+    - myelodysplastic syndrome
+    - myeloproliferative neoplasm
+    - acute myeloid leukemia
+    - acute lymphoblastic leukemia
+    - chronic myeloid leukemia
+    - chronic lymphocytic leukemia
+    - diffuse large b cell lymphoma
+    - hodgkin lymphoma
+    - tumor lysis syndrome
+    - disseminated intravascular coagulation
+    - venous thromboembolism
+    - pulmonary embolism
+    - deep vein thrombosis
+    - immune thrombocytopenia
+    - hemophilia
+    - solid tumor
+    - malignancy
+    - metastasis
+    - 白血病
+    - 淋巴癌
+    - 多發性骨髓瘤
+    - 嗜中性球低下發燒
+    - 化療
+    - 血小板低下
+    - 貧血
+    - 轉移
+    aliases:
+    - heme onc
+    - hem onc
+    - hemato
+    - hematology
+    - oncology
+    - onc
+    - heme
+    - cancer
+    - ca
+    - aml
+    - all
+    - cml
+    - cll
+    - dlbcl
+    - mm
+    - mds
+    - mpn
+    - tls
+    - dic
+    - vte
+    - dvt
+    - pe
+    - itp
+    - ttp
+    - hus
+    - anc
+    - plt
+    - hb
+    weak_clues:
+    - chemotherapy
+    - radiation
+    - pancytopenia
+    - neutropenia
+    - anc
+    - platelet
+    - hemoglobin
+    - blast
+    - ldh
+    - uric acid
+    - fibrinogen
+    - d-dimer
+    - pt
+    - aptt
+    - inr
+    - peripheral smear
+    - bone marrow biopsy
+    - flow cytometry
+    - ferritin
+    - iron
+    - transferrin saturation
+    - rituximab
+    - g-csf
+    - allopurinol
+    - rasburicase
+    medications: []
+    labs_imaging: []
+    procedures: []
+    negative_context: []
+    legacy_aliases: []
+  rheumatology:
+    display_name: 風濕免疫科
+    obsidian_folder: Medicine/Rheumatology
+    strong_keywords:
+    - sle
+    - systemic lupus erythematosus
+    - rheumatoid arthritis
+    - vasculitis
+    - gout
+    - crystal arthritis
+    - polymyositis
+    - dermatomyositis
+    - scleroderma
+    - lupus nephritis
+    - ankylosing spondylitis
+    - psoriatic arthritis
+    - sjogren syndrome
+    - systemic sclerosis
+    - mixed connective tissue disease
+    - anca associated vasculitis
+    - giant cell arteritis
+    - polymyalgia rheumatica
+    - antiphospholipid syndrome
+    - inflammatory myopathy
+    - adult onset still disease
+    - behcet disease
+    - sarcoidosis
+    - reactive arthritis
+    - septic arthritis
+    - pseudogout
+    - 紅斑性狼瘡
+    - 類風濕
+    - 血管炎
+    - 痛風
+    - 狼瘡腎炎
+    aliases:
+    - rheum
+    - rheumatology
+    - ra
+    - sle
+    - lupus
+    - ln
+    - aps
+    - anca
+    - aav
+    - gca
+    - pmr
+    - dm
+    - pm
+    - mctd
+    - ssc
+    - sjogren
+    - spa
+    - psa
+    - gout
+    - cppd
+    - aosis
+    - biologic
+    - dmard
+    weak_clues:
+    - ana
+    - anti dsDNA
+    - ena
+    - anca
+    - c3
+    - c4
+    - complement
+    - esr
+    - crp
+    - uric acid
+    - rheumatoid factor
+    - anti ccp
+    - hla-b27
+    - antiphospholipid antibody
+    - ck
+    - aldolase
+    - proteinuria
+    - steroid
+    - prednisolone
+    - hydroxychloroquine
+    - methotrexate
+    - colchicine
+    - allopurinol
+    - biologic
+    medications: []
+    labs_imaging: []
+    procedures: []
+    negative_context: []
+    legacy_aliases: []
+  neurology:
+    display_name: 神經內科
+    obsidian_folder: Medicine/Neurology
+    strong_keywords:
+    - stroke
+    - ischemic stroke
+    - mca infarction
+    - intracerebral hemorrhage
+    - intracranial hemorrhage
+    - subarachnoid hemorrhage
+    - carotid stenosis
+    - seizure
+    - aphasia
+    - transient ischemic attack
+    - subdural hematoma
+    - epidural hematoma
+    - cerebral venous thrombosis
+    - status epilepticus
+    - syncope
+    - delirium
+    - dementia
+    - parkinson disease
+    - myasthenia gravis
+    - guillain barre syndrome
+    - multiple sclerosis
+    - meningitis
+    - encephalitis
+    - migraine
+    - vertigo
+    - peripheral neuropathy
+    - spinal cord compression
+    - radiculopathy
+    - myelopathy
+    - 腦中風
+    - 腦出血
+    - 顱內出血
+    aliases:
+    - neuro
+    - neurology
+    - cva
+    - tia
+    - nihss
+    - lvo
+    - ich
+    - sah
+    - sdh
+    - edh
+    - seizure
+    - sz
+    - se
+    - eeg
+    - mg
+    - gbs
+    - ms
+    - pd
+    - ams
+    - vertigo
+    - tpa
+    - tnk
+    - evt
+    - mt
+    - lkw
+    - npo
+    weak_clues:
+    - nihss
+    - focal deficit
+    - facial droop
+    - limb weakness
+    - aphasia
+    - dysarthria
+    - ct brain
+    - cta
+    - mri brain
+    - dwi
+    - eeg
+    - lumbar puncture
+    - csf
+    - last known well
+    - thrombolysis
+    - thrombectomy
+    - levetiracetam
+    - phenytoin
+    - aspirin
+    - clopidogrel
+    - anticoagulation
+    - mannitol
+    - hypertonic saline
+    medications: []
+    labs_imaging: []
+    procedures: []
+    negative_context: []
+    legacy_aliases: []
+    obsidian_keywords:
+    - ischemic stroke
+    - mca infarction
+    - nihss
+    - carotid stenosis
+    - intracerebral hemorrhage
+    - subarachnoid hemorrhage
+    - seizure
+  critical_care:
+    display_name: 重症醫學
+    obsidian_folder: Medicine/Critical_Care
+    strong_keywords:
+    - shock
+    - septic shock
+    - cardiogenic shock
+    - hypovolemic shock
+    - obstructive shock
+    - distributive shock
+    - respiratory failure
+    - acute respiratory failure
+    - ards
+    - acute respiratory distress syndrome
+    - airway compromise
+    - icu
+    - intensive care
+    - vasopressor
+    - norepinephrine
+    - epinephrine
+    - dopamine
+    - dobutamine
+    - mechanical ventilation
+    - noninvasive ventilation
+    - post cardiac arrest
+    - post-cardiac arrest care
+    - cardiac arrest
+    - severe sepsis
+    - multi organ failure
+    - multi-organ failure
+    - mods
+    - acute liver failure
+    - acute kidney injury requiring rrt
+    - massive bleeding
+    - massive gi bleeding
+    - dic
+    - anaphylactic shock
+    - anaphylaxis
+    - status epilepticus
+    - coma
+    - delirium
+    - altered mental status with airway concern
+    - acute severe pancreatitis
+    - severe metabolic acidosis
+    - hyperkalemia with ecg changes
+    - 休克
+    - 呼吸衰竭
+    - 加護病房
+    - 升壓劑
+    - 插管
+    aliases:
+    - icu
+    - critical care
+    - crit care
+    - intensive care
+    - micu
+    - sicu
+    - ccu
+    - rrt
+    - crrt
+    - mv
+    - mechanical ventilation
+    - intubation
+    - extubation
+    - vasopressor
+    - pressor
+    - norepinephrine
+    - levophed
+    - epinephrine
+    - dopamine
+    - dobutamine
+    - ventilator
+    - bipap
+    - hfnc
+    - shock
+    - ards
+    - ett
+    - niv
+    - norepi
+    - epi
+    - cpr
+    - rosc
+    - code blue
+    - sofa
+    - apache
+    weak_clues:
+    - lactate
+    - 乳酸
+    - map
+    - gcs
+    - apache
+    - sofa
+    - vasopressor requirement
+    - fio2
+    - peep
+    - pao2/fio2
+    - arterial blood gas
+    - abg
+    - metabolic acidosis
+    - respiratory acidosis
+    - central line
+    - arterial line
+    - intubated
+    - sedated
+    - ventilator setting
+    - hypotension
+    - vasopressor
+    - norepinephrine
+    - epinephrine
+    - ventilator
+    - intubation
+    - ett
+    - tidal volume
+    - plateau pressure
+    - fluid resuscitation
+    - crystalloid
+    - transfusion
+    - sedation
+    - propofol
+    - fentanyl
+    - rass
+    medications: []
+    labs_imaging: []
+    procedures: []
+    negative_context: []
+    legacy_aliases: []
+    required_any:
+    - shock
+    - septic shock
+    - cardiogenic shock
+    - hypovolemic shock
+    - obstructive shock
+    - vasopressor
+    - pressor
+    - norepinephrine
+    - levophed
+    - epinephrine
+    - dopamine
+    - dobutamine
+    - icu
+    - intensive care
+    - micu
+    - sicu
+    - ccu
+    - mechanical ventilation
+    - ventilator
+    - intubation
+    - intubated
+    - extubation
+    - bipap
+    - hfnc
+    - peep
+    - fio2
+    - pao2/fio2
+    - post cardiac arrest
+    - post-cardiac arrest care
+    - cardiac arrest
+    - severe sepsis
+    - multi organ failure
+    - multi-organ failure
+    - mods
+    - status epilepticus
+    - coma
+    - altered mental status with airway concern
+    - acute kidney injury requiring rrt
+    - crrt
+    - severe metabolic acidosis
+    - hyperkalemia with ecg changes
+    - 加護病房
+    - 升壓劑
+    - 插管
+  general_internal_medicine:
+    display_name: 一般內科
+    obsidian_folder: Medicine/General_Internal_Medicine
+    strong_keywords:
+    - general internal medicine
+    - anemia
+    - weight loss
+    - failure to thrive
+    - falls
+    - syncope
+    - hyponatremia
+    - electrolyte imbalance
+    - dehydration
+    - malnutrition
+    - polypharmacy
+    - multimorbidity
+    - frailty
+    - medication reconciliation
+    - diagnostic uncertainty
+    - functional decline
+    - delirium
+    - geriatric syndrome
+    - discharge planning
+    - unexplained weakness
+    - abnormal liver function
+    - abnormal renal function
+    - chronic disease management
+    - palliative care discussion
+    - care coordination
+    - social admission
+    - pressure injury
+    - complex multimorbidity
+    - 一般內科
+    - 多重共病
+    aliases:
+    - gim
+    - general medicine
+    - internal medicine
+    - medicine
+    - med
+    - ward medicine
+    - hospital medicine
+    - hospitalist
+    - primary care
+    - complex care
+    - geriatric
+    - gerontology
+    - frailty
+    - ftt
+    - mrc
+    - mr
+    - dc planning
+    - placement
+    - rehab
+    - snf
+    - nh
+    - polypharmacy
+    weak_clues:
+    - fever
+    - edema
+    - dizziness
+    - ward
+    - admission
+    - discharge planning
+    - follow up
+    - medication reconciliation
+    - nutrition
+    - albumin
+    - sodium
+    - creatinine
+    - hemoglobin
+    - crp
+    - functional status
+    - adl
+    - iadl
+    - pt
+    - ot
+    - social work
+    - family meeting
+    - goals of care
+    - pressure injury
+    - fall risk
+    - delirium screen
+    medications: []
+    labs_imaging: []
+    procedures: []
+    negative_context: []
+    legacy_aliases: []
+  obstetrics_gynecology:
+    display_name: 婦產科
+    obsidian_folder: Medicine/Obstetrics_Gynecology
+    strong_keywords:
+    - obstetrics
+    - gynecology
+    - reproductive endocrinology
+    - infertility
+    - tubal factor infertility
+    - hydrosalpinx
+    - endometrioma
+    - ovarian endometrioma
+    - chocolate cyst
+    - ivf
+    - in vitro fertilization
+    - embryo freezing
+    - oocyte freezing
+    - hysterosalpingography
+    - hsg
+    - laparoscopy
+    - chromopertubation
+    - salpingectomy
+    - ovarian cyst
+    - 輸卵管水腫
+    - 輸卵管積水
+    - 不孕
+    - 試管嬰兒
+    - 胚胎冷凍
+    - 凍胚
+    - 凍卵
+    - 子宮輸卵管攝影
+    - 巧克力囊腫
+    - 卵巢囊腫
+    - 腹腔鏡
+    aliases:
+    - obgyn
+    - ob/gyn
+    - obs gyn
+    - obstetrics and gynecology
+    - gyn
+    - gyne
+    - rei
+    - reproductive_endocrinology_and_infertility
+    - reproductive endocrinology and infertility
+    - fertility
+    weak_clues:
+    - amh
+    - embryo transfer
+    - ovulation induction
+    - menstrual day
+    - ovarian reserve
+    - implantation
+    - ectopic pregnancy
+    - salpingitis
+    - 月經
+    - 植入
+    - 排卵
+    - 受孕
+    - 備孕
+    - 卵巢功能
+    - 子宮
+    - 輸卵管
+    - 卵巢
+    legacy_aliases:
+    - reproductive_endocrinology_and_infertility
+    - reproductive_endocrinology
+    - infertility
+    - gynecology
+    - obstetrics
+    - obgyn
+    obsidian_keywords:
+    - infertility
+    - hydrosalpinx
+    - tubal factor infertility
+    - endometrioma
+    - ivf
+legacy_specialties:
+- id: cardiology
+  display_name: Cardiology
+  keywords:
+  - stemi
+  - nstemi
+  - st elevation
+  - acute coronary syndrome
+  - acs
+  - myocardial infarction
+  - heart failure
+  - troponin
+  - coronary artery disease
+  - percutaneous coronary intervention
+  - atrial fibrillation with rapid ventricular response
+  - aortic dissection
+  - 心肌梗塞
+  aliases:
+  - cardiology
+  - cv
+  - pci
+  - cad
+  - mi
+  - hf
+  - af rvr
+  clues:
+  - ecg
+  - 心電圖
+  - troponin 上升
+  - 肌鈣蛋白上升
+  - pulmonary edema
+  - beta blockade
+  obsidian_keywords:
+  - heart failure
+  - stemi
+  - nstemi
+  - atrial fibrillation with rapid ventricular response
+  - coronary artery disease
+  - percutaneous coronary intervention
+- id: neurology
+  display_name: Neurology
+  keywords:
+  - stroke
+  - ischemic stroke
+  - mca infarction
+  - intracerebral hemorrhage
+  - intracranial hemorrhage
+  - subarachnoid hemorrhage
+  - carotid stenosis
+  - seizure
+  - aphasia
+  - 腦中風
+  - 腦出血
+  - 顱內出血
+  aliases:
+  - neuro
+  - nihss
+  - cva
+  - sah
+  - ich
+  - lvo
+  clues:
+  - nihss
+  - ct
+  - cta
+  - last known well
+  - thrombolysis
+  - thrombectomy
+  obsidian_keywords:
+  - ischemic stroke
+  - mca infarction
+  - nihss
+  - carotid stenosis
+  - intracerebral hemorrhage
+  - subarachnoid hemorrhage
+  - seizure
+- id: neurosurgery
+  display_name: Neurosurgery
+  keywords:
+  - hydrocephalus
+  - vp shunt
+  - ventriculostomy
+  - subdural
+  - epidural hematoma
+  - craniotomy
+  - 顱內出血
+  - 水腦
+  - 腦室引流
+  - 開刀
+  aliases:
+  - ns
+  - nsg
+  - evd
+  clues:
+  - craniotomy
+  - ventriculostomy
+  - external ventricular drain
+- id: infectious_disease
+  obsidian_id: infectious-disease
+  display_name: Infectious Disease
+  keywords:
+  - sepsis
+  - septic shock
+  - bacteremia
+  - hiv
+  - pneumocystis
+  - pneumocystis jirovecii pneumonia
+  - pcp
+  - infective endocarditis
+  - 敗血症
+  - 感染性休克
+  aliases:
+  - id
+  - infection
+  - pjp
+  clues:
+  - antibiotic
+  - blood culture
+  - cd4
+  - hiv combo test
+  - sputum
+  - lactate
+  - 乳酸
+  obsidian_keywords:
+  - bacteremia
+  - sepsis
+  - septic shock
+  - antibiotic
+  - blood culture
+  - infective endocarditis
+- id: hematology_oncology
+  display_name: Hematology / Oncology
+  keywords:
+  - leukemia
+  - lymphoma
+  - multiple myeloma
+  - neutropenic fever
+  - febrile neutropenia
+  - chemotherapy
+  - pancytopenia
+  - thrombocytopenia
+  - anemia
+  - malignancy
+  - metastasis
+  - 白血病
+  - 淋巴癌
+  - 多發性骨髓瘤
+  - 嗜中性球低下發燒
+  - 化療
+  - 血小板低下
+  - 貧血
+  - 轉移
+  aliases:
+  - heme onc
+  - hem onc
+  - oncology
+  - heme
+  clues:
+  - chemotherapy
+  - pancytopenia
+  - neutropenia
+  - platelet
+  - hemoglobin
+- id: rheumatology
+  display_name: Rheumatology
+  keywords:
+  - sle
+  - systemic lupus erythematosus
+  - rheumatoid arthritis
+  - vasculitis
+  - gout
+  - crystal arthritis
+  - polymyositis
+  - dermatomyositis
+  - scleroderma
+  - lupus nephritis
+  - 紅斑性狼瘡
+  - 類風濕
+  - 血管炎
+  - 痛風
+  - 狼瘡腎炎
+  aliases:
+  - rheum
+  - ra
+  - lupus
+  clues:
+  - ana
+  - anca
+  - complement
+  - uric acid
+  - steroid
+- id: pulmonology
+  display_name: Pulmonology
+  keywords:
+  - pneumonia
+  - hypoxemia
+  - hypoxemic
+  - respiratory failure
+  - pulmonary embolism
+  - copd
+  - asthma
+  - asthma exacerbation
+  - pleural effusion
+  - 肺炎
+  - 低氧
+  - 肺栓塞
+  aliases:
+  - pulm
+  - chest
+  - pe
+  - copd
+  clues:
+  - spo2
+  - oxygen
+  - nasal cannula
+  - ctpa
+  - d dimer
+  - d-dimer
+  - chest x-ray
+  - interstitial infiltrates
+  obsidian_keywords:
+  - copd
+  - asthma exacerbation
+  - pneumonia
+  - pleural effusion
+  - respiratory failure
+- id: hepatobiliary_pancreatic
+  display_name: Hepatobiliary / Pancreatic
+  keywords:
+  - hepatitis
+  - acute hepatitis
+  - acute liver failure
+  - cirrhosis
+  - hepatic encephalopathy
+  - cholangitis
+  - cholecystitis
+  - choledocholithiasis
+  - pancreatitis
+  - hepatocellular carcinoma
+  - hcc
+  - ascites
+  - 黃疸
+  - 肝炎
+  - 肝衰竭
+  - 肝硬化
+  - 肝昏迷
+  - 膽管炎
+  - 膽囊炎
+  - 總膽管結石
+  - 胰臟炎
+  - 肝癌
+  aliases:
+  - hepatology
+  - gi liver
+  - hbp
+  clues:
+  - jaundice
+  - bilirubin
+  - ercp
+  - ast
+  - alt
+- id: gastroenterology
+  display_name: Gastroenterology
+  keywords:
+  - upper gi bleed
+  - gi bleed
+  - hematemesis
+  - melena
+  - cirrhosis
+  - ascites
+  - colonoscopy
+  - endoscopy
+  - 吐血
+  - 黑便
+  - 肝硬化
+  aliases:
+  - gi
+  - gastro
+  - ugib
+  clues:
+  - hb 下降
+  - hemoglobin drop
+  - transfusion
+  - ppi
+  - endoscopy
+  obsidian_keywords:
+  - gi bleed
+  - melena
+  - hematemesis
+  - cirrhosis
+  - ascites
+  - colonoscopy
+- id: general_surgery
+  display_name: General Surgery
+  obsidian_folder: Medicine/General_Surgery
+  keywords:
+  - appendicitis
+  - bowel obstruction
+  - ileus
+  - peritonitis
+  - diverticulitis
+  - hernia
+  - abscess drainage
+  - wound infection
+  - burn injury
+  - scald injury
+  - scald burn
+  - thermal injury
+  - postoperative
+  - surgical site infection
+  - 闌尾炎
+  - 腸阻塞
+  - 腹膜炎
+  - 憩室炎
+  - 疝氣
+  - 燙傷
+  - 燒燙傷
+  - 傷口感染
+  - 術後
+  aliases:
+  - gs
+  - surgery
+  clues:
+  - surgical evaluation
+  - source control
+  - abscess drainage
+  - postoperative
+  - burn wound care
+- id: nephrology
+  display_name: Nephrology
+  keywords:
+  - acute kidney injury
+  - chronic kidney disease
+  - aki
+  - ckd
+  - hyperkalemia
+  - dialysis
+  - hemodialysis
+  - uremia
+  - 高血鉀
+  - 腎衰竭
+  - 洗腎
+  aliases:
+  - renal
+  - nephro
+  - hd
+  clues:
+  - potassium
+  - 鉀
+  - peaked t
+  - wide qrs
+  - creatinine
+  obsidian_keywords:
+  - hemodialysis
+  - acute kidney injury
+  - chronic kidney disease
+  - hyperkalemia
+  - uremia
+- id: endocrinology
+  display_name: Endocrinology
+  keywords:
+  - dka
+  - hhs
+  - diabetic ketoacidosis
+  - hyperosmolar
+  - 酮酸中毒
+  - 高血糖高滲
+  aliases:
+  - endo
+  - diabetes
+  clues:
+  - insulin
+  - anion gap
+  - ketone
+  - 酮體
+  - ph 下降

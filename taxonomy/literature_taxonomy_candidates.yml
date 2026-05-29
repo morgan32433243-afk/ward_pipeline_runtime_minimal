@@ -1,0 +1,413 @@
+version: '1.0'
+queue_type: literature_taxonomy_candidates
+items:
+- key: diagnosis:approximately_80
+  status: watch
+  kind: diagnosis
+  label: approximately_80
+  keywords:
+  - approximately 80
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260529_181425_9208f2
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260529_181425_9208f2
+  examples:
+  - approximately 80
+- key: diagnosis:bilateral_interstitial_infiltrates
+  status: watch
+  kind: diagnosis
+  label: bilateral_interstitial_infiltrates
+  keywords:
+  - bilateral interstitial infiltrates
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260511_233153_60057e
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260511_233153_60057e
+  examples:
+  - bilateral interstitial infiltrates
+- key: diagnosis:bowel_movements
+  status: watch
+  kind: diagnosis
+  label: bowel_movements
+  keywords:
+  - bowel movements
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260521_210108_be6573
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260521_215030_778f7e
+  examples:
+  - bowel movements
+- key: diagnosis:brain_tumor_diagnosis
+  status: watch
+  kind: diagnosis
+  label: brain_tumor_diagnosis
+  keywords:
+  - brain tumor diagnosis
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260524_103703_19fc40
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260524_103703_19fc40
+  examples:
+  - brain tumor diagnosis
+- key: diagnosis:but_not_fully_confirmed
+  status: watch
+  kind: diagnosis
+  label: but_not_fully_confirmed
+  keywords:
+  - but not fully confirmed
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260529_181425_9208f2
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260529_181425_9208f2
+  examples:
+  - but not fully confirmed
+- key: diagnosis:case_management_after_confirmation
+  status: watch
+  kind: diagnosis
+  label: case_management_after_confirmation
+  keywords:
+  - case management after confirmation
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260511_233153_60057e
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260511_233153_60057e
+  examples:
+  - case management after confirmation
+- key: diagnosis:cold_water
+  status: watch
+  kind: diagnosis
+  label: cold_water
+  keywords:
+  - cold water
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260521_210727_7cd291
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260521_210727_7cd291
+  examples:
+  - cold water
+- key: diagnosis:cold_water_afterward
+  status: watch
+  kind: diagnosis
+  label: cold_water_afterward
+  keywords:
+  - cold water afterward
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260521_210452_4c8dd9
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260521_210452_4c8dd9
+  examples:
+  - cold water afterward
+- key: diagnosis:cold_water_repeatedly_afterward
+  status: watch
+  kind: diagnosis
+  label: cold_water_repeatedly_afterward
+  keywords:
+  - cold water repeatedly afterward
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260521_212007_6cc9bc
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260521_212007_6cc9bc
+  examples:
+  - cold water repeatedly afterward
+- key: diagnosis:covid
+  status: watch
+  kind: diagnosis
+  label: covid
+  keywords:
+  - 名稱、病毒/流感/COVID檢測結果
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260521_182501_9bce00
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260521_182501_9bce00
+  examples:
+  - 名稱、病毒/流感/COVID檢測結果
+- key: diagnosis:estimated_out
+  status: watch
+  kind: diagnosis
+  label: estimated_out
+  keywords:
+  - estimated out-
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260529_181425_9208f2
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260529_181425_9208f2
+  examples:
+  - estimated out-
+- key: diagnosis:government_subsidy_considerations
+  status: watch
+  kind: diagnosis
+  label: government_subsidy_considerations
+  keywords:
+  - government subsidy considerations
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260529_181425_9208f2
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260529_181425_9208f2
+  examples:
+  - government subsidy considerations
+- key: diagnosis:if_pain_increases
+  status: watch
+  kind: diagnosis
+  label: if_pain_increases
+  keywords:
+  - if pain increases
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260521_211459_b0e5a4
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260521_211459_b0e5a4
+  examples:
+  - if pain increases
+- key: diagnosis:incomplete_recovery
+  status: watch
+  kind: diagnosis
+  label: incomplete_recovery
+  keywords:
+  - incomplete recovery
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260520_211558_484d73
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260520_211558_484d73
+  examples:
+  - incomplete recovery
+- key: diagnosis:internal_hemorrhoids
+  status: watch
+  kind: diagnosis
+  label: internal_hemorrhoids
+  keywords:
+  - internal hemorrhoids
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260520_205520_0b8c74
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260521_201436_dd25d4
+  examples:
+  - internal hemorrhoids
+- key: diagnosis:internal_hemorrhoids_treated_successfully
+  status: watch
+  kind: diagnosis
+  label: internal_hemorrhoids_treated_successfully
+  keywords:
+  - internal hemorrhoids treated successfully
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260520_205520_0b8c74
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260520_205520_0b8c74
+  examples:
+  - internal hemorrhoids treated successfully
+- key: diagnosis:is_documented
+  status: watch
+  kind: diagnosis
+  label: is_documented
+  keywords:
+  - is documented
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260521_212007_6cc9bc
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260521_212007_6cc9bc
+  examples:
+  - is documented
+- key: diagnosis:is_not_documented
+  status: watch
+  kind: diagnosis
+  label: is_not_documented
+  keywords:
+  - is not documented
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: '20260521_215630_008076'
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: '20260521_215630_008076'
+  examples:
+  - is not documented
+- key: diagnosis:longstanding_external_hemorrhoids
+  status: watch
+  kind: diagnosis
+  label: longstanding_external_hemorrhoids
+  keywords:
+  - longstanding external hemorrhoids
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260521_201436_dd25d4
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260521_201436_dd25d4
+  examples:
+  - longstanding external hemorrhoids
+- key: diagnosis:persistent_pain
+  status: watch
+  kind: diagnosis
+  label: persistent_pain
+  keywords:
+  - persistent pain
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260521_201436_dd25d4
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260521_201436_dd25d4
+  examples:
+  - persistent pain
+- key: diagnosis:possible_subconjunctival_hemorrhage
+  status: watch
+  kind: diagnosis
+  label: possible_subconjunctival_hemorrhage
+  keywords:
+  - possible subconjunctival hemorrhage
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260521_211459_b0e5a4
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260521_211459_b0e5a4
+  examples:
+  - possible subconjunctival hemorrhage
+- key: diagnosis:retained_clot
+  status: watch
+  kind: diagnosis
+  label: retained_clot
+  keywords:
+  - retained clot
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260520_183346_92ad0a
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260520_205520_0b8c74
+  examples:
+  - retained clot
+- key: diagnosis:retained_clot_thrombus_causing_symptoms
+  status: watch
+  kind: diagnosis
+  label: retained_clot_thrombus_causing_symptoms
+  keywords:
+  - retained clot/thrombus causing symptoms
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260520_205520_0b8c74
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260520_205520_0b8c74
+  examples:
+  - retained clot/thrombus causing symptoms
+- key: diagnosis:right_hydrosalpinx
+  status: watch
+  kind: diagnosis
+  label: right_hydrosalpinx
+  keywords:
+  - right hydrosalpinx
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260529_181425_9208f2
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260529_181425_9208f2
+  examples:
+  - right hydrosalpinx
+- key: diagnosis:rubber_band_ligation
+  status: watch
+  kind: diagnosis
+  label: rubber_band_ligation
+  keywords:
+  - rubber band ligation
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260520_183346_92ad0a
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260521_201436_dd25d4
+  examples:
+  - rubber band ligation
+- key: diagnosis:scald_burn
+  status: watch
+  kind: diagnosis
+  label: scald_burn
+  keywords:
+  - scald burn
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260521_210727_7cd291
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260521_210727_7cd291
+  examples:
+  - scald burn
+- key: diagnosis:scald_injury
+  status: watch
+  kind: diagnosis
+  label: scald_injury
+  keywords:
+  - scald injury
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260521_212007_6cc9bc
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260521_212007_6cc9bc
+  examples:
+  - scald injury
+- key: diagnosis:standard_treatment
+  status: watch
+  kind: diagnosis
+  label: standard_treatment
+  keywords:
+  - standard treatment
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260524_103703_19fc40
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260524_103703_19fc40
+  examples:
+  - standard treatment
+- key: diagnosis:symptomatic_external_hemorrhoids
+  status: watch
+  kind: diagnosis
+  label: symptomatic_external_hemorrhoids
+  keywords:
+  - symptomatic external hemorrhoids
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260520_183346_92ad0a
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260520_183346_92ad0a
+  examples:
+  - symptomatic external hemorrhoids
+- key: diagnosis:the_attending_physician_again
+  status: watch
+  kind: diagnosis
+  label: the_attending_physician_again
+  keywords:
+  - the attending physician again
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260519_191410_cfa0b9
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260519_191410_cfa0b9
+  examples:
+  - the attending physician again
+- key: diagnosis:thermal_injury_burn
+  status: watch
+  kind: diagnosis
+  label: thermal_injury_burn
+  keywords:
+  - thermal injury/burn
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260521_210452_4c8dd9
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260521_210452_4c8dd9
+  examples:
+  - thermal injury/burn
+- key: diagnosis:tubal_factor_disease
+  status: watch
+  kind: diagnosis
+  label: tubal_factor_disease
+  keywords:
+  - tubal factor disease
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260529_181425_9208f2
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260529_181425_9208f2
+  examples:
+  - tubal factor disease
+- key: diagnosis:unknown
+  status: watch
+  kind: diagnosis
+  label: unknown
+  keywords:
+  - 深度燙傷或感染風險未記載
+  - 症狀
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260521_212007_6cc9bc
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: '20260521_215630_008076'
+  examples:
+  - 深度燙傷或感染風險未記載
+  - 症狀
+- key: diagnosis:viral_etiology
+  status: watch
+  kind: diagnosis
+  label: viral_etiology
+  keywords:
+  - viral etiology
+  first_seen_source_type: result.hermes.md+transcript.manual.txt
+  first_seen_source_id: 20260521_182501_9bce00
+  last_seen_source_type: result.hermes.md+transcript.manual.txt
+  last_seen_source_id: 20260521_182501_9bce00
+  examples:
+  - viral etiology

@@ -1,0 +1,23 @@
+version: "1.0"
+rollout_level: 0
+auto_finalize_enabled: false
+
+# Level 0 keeps the full pipeline available for artifact generation and
+# validation, but blocks final auto-finalization until explicit rollout.
+allowed_encounter_types: []
+
+required_sections:
+  - subjective
+  - objective
+  - assessment
+  - plan
+
+minimum_source_fact_refs: 1
+
+block_on:
+  high_risk_excluded_facts: true
+  missing_source_fact_coverage: true
+  missing_clinical_facts: true
+  missing_required_sections: true
+  unresolved_uncertain_terms: true
+  unresolved_stt_recovery_candidates: true

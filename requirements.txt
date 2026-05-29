@@ -1,0 +1,11 @@
+imageio-ffmpeg
+noisereduce
+playwright
+pyannote.audio
+python-dotenv
+pyyaml
+requests
+torch
+torchaudio
+torchvision
+whisperx

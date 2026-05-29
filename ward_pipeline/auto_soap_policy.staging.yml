@@ -1,0 +1,31 @@
+version: "1.0"
+rollout_level: 1
+auto_finalize_enabled: true
+
+# Staging policy for a narrow auto-finalize test on a real recording.
+# Keep the same guardrails as production, and limit rollout to explicit selectors.
+allowed_encounter_types: []
+
+rollout_selector:
+  allowed_job_ids:
+    - "20260513_163641_fb2a41"
+    - "20260512_192610_c0e7d4"
+  allowed_bed_ids: []
+  allowed_encounter_ids: []
+  allowed_same_encounter_confidence: []
+
+required_sections:
+  - subjective
+  - objective
+  - assessment
+  - plan
+
+minimum_source_fact_refs: 1
+
+block_on:
+  high_risk_excluded_facts: true
+  missing_source_fact_coverage: true
+  missing_clinical_facts: true
+  missing_required_sections: true
+  unresolved_uncertain_terms: true
+  unresolved_stt_recovery_candidates: true

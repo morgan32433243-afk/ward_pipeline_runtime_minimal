@@ -1,0 +1,169 @@
+diagnosis:
+  - canonical: community-acquired pneumonia
+    confidence: high
+    variants:
+      - community acquired pneumonia
+      - Community Acquired的Pneumonia
+      - Community Acquired Pneumonia
+  - canonical: pneumonia
+    confidence: high
+    variants:
+      - Pneumonia
+      - pneumoni
+
+symptoms:
+  - canonical: cough
+    confidence: high
+    variants:
+      - 肝殼
+  - canonical: crackles
+    confidence: high
+    variants:
+      - crackers
+      - Crackers
+  - canonical: wheezing
+    confidence: high
+    variants:
+      - weezing
+      - Weezing
+  - canonical: shortness of breath
+    confidence: high
+    variants:
+      - shortness breath
+  - canonical: nausea
+    confidence: high
+    variants:
+      - nauseous
+  - canonical: diarrhea
+    confidence: high
+    variants:
+      - diarrhoea
+
+labs:
+  - canonical: creatinine
+    confidence: high
+    variants:
+      - createning
+      - Createning
+      - cretinine
+      - Cretinine
+  - canonical: SpO2
+    confidence: high
+    variants:
+      - saturation
+      - Saturation
+      - O2 saturation
+  - canonical: WBC
+    confidence: high
+    variants:
+      - white blood cell
+      - white count
+      - Y-count
+      - Y count
+      - Ycount
+      - y-count
+      - y count
+      - ycount
+  - canonical: CRP
+    confidence: high
+    variants:
+      - C reactive protein
+      - C-reactive protein
+  - canonical: SpO2
+    confidence: high
+    variants:
+      - SPO2
+      - spO2
+      - spo2
+      - SPO2 saturation
+      - spO2 saturation
+  - canonical: CD4
+    confidence: high
+    variants:
+      - CDC4
+      - CDc4
+      - cdc4
+  - canonical: HIV combo test
+    confidence: high
+    variants:
+      - HIV combo test
+      - HIV的combo test
+
+medications:
+  - canonical: insulin sliding scale
+    confidence: high
+    variants:
+      - insulin sliding scale
+      - Sliding Scale
+      - Slighting Scale
+  - canonical: ceftriaxone
+    confidence: medium
+    variants:
+      - Sepha Trusson
+      - Sepatriazone
+      - Sepatrasone
+  - canonical: azithromycin
+    confidence: medium
+    variants:
+      - Arise on Machine
+      - Arizomacin
+  - canonical: metformin
+    confidence: high
+    variants:
+      - metformine
+  - canonical: prednisolone
+    confidence: high
+    variants:
+      - Prenisolone
+  - canonical: trimethoprim-sulfamethoxazole
+    confidence: high
+    variants:
+      - Bactrim
+      - TMP-SMX
+      - TMP SMX
+
+procedures:
+  - canonical: blood culture
+    confidence: medium
+    variants:
+      - BlaKa
+      - BlaCar
+      - blood c/s
+  - canonical: sputum culture
+    confidence: medium
+    variants:
+      - SpiltonKa
+      - SputumCar
+      - SputumKa
+      - sputum c/s
+  - canonical: nasal oxygen
+    confidence: high
+    variants:
+      - NASO量力
+      - NASO2
+      - naso2
+      - nasal O2
+  - canonical: pleural effusion
+    confidence: high
+    variants:
+      - pro-effusion
+      - pleural effusion
+  - canonical: bronchoscopy
+    confidence: high
+    variants:
+      - Bronchoscopy
+  - canonical: syphilis screen
+    confidence: medium
+    variants:
+      - 美毒
+
+taiwan_clinical_phrases:
+  - canonical: 查房
+    confidence: high
+    variants:
+      - ward round
+      - ward rounds
+  - canonical: 需人工確認
+    confidence: high
+    variants:
+      - need human confirmation

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Clinical Specialty Map",
+  "type": "object",
+  "required": ["version", "taxonomy_type", "specialties"],
+  "properties": {
+    "version": {"type": "string"},
+    "taxonomy_type": {"const": "clinical_specialty_map"},
+    "description": {"type": "string"},
+    "specialties": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "display_name",
+          "obsidian_folder",
+          "strong_keywords",
+          "aliases",
+          "weak_clues",
+          "medications",
+          "labs_imaging",
+          "procedures",
+          "negative_context",
+          "legacy_aliases"
+        ],
+        "properties": {
+          "display_name": {"type": "string"},
+          "obsidian_folder": {"type": "string"},
+          "strong_keywords": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+          "aliases": {"type": "array", "items": {"type": "string"}},
+          "weak_clues": {"type": "array", "items": {"type": "string"}},
+          "medications": {"type": "array", "items": {"type": "string"}},
+          "labs_imaging": {"type": "array", "items": {"type": "string"}},
+          "procedures": {"type": "array", "items": {"type": "string"}},
+          "negative_context": {"type": "array", "items": {"type": "string"}},
+          "legacy_aliases": {"type": "array", "items": {"type": "string"}},
+          "subcategories": {"type": "array", "items": {"type": "object"}},
+          "obsidian_keywords": {"type": "array", "items": {"type": "string"}},
+          "required_any": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": true
+      }
+    },
+    "legacy_specialties": {
+      "type": "array",
+      "items": {"type": "object"}
+    }
+  },
+  "additionalProperties": true
+}

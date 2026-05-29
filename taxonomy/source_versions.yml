@@ -1,0 +1,27 @@
+version: "1.0"
+sources:
+  - file: ward_pipeline/jobs.py
+    extracted_at: "2026-05-17"
+    extracted_constants:
+      - _infer_obsidian_service.service_keyword_sets
+      - _infer_obsidian_taxonomy.diagnosis_topics
+      - _infer_obsidian_taxonomy.problem_keywords
+  - file: ward_pipeline/literature.py
+    extracted_at: "2026-05-17"
+    extracted_constants:
+      - SERVICE_KEYWORD_SETS
+      - DIAGNOSIS_KEYWORD_SETS
+notes:
+  - "Phase 1 foundation only. Existing scenario/query logic remains in Python."
+  - "Specialty and diagnosis keywords are now data files so they can expand without editing workflow code."
+  - "2026-05-17 Step 2 added canonical Phase 1 specialties. gastroenterology and hepatobiliary_pancreatic are retained as legacy aliases under gastroenterology_hepatology."
+  - "2026-05-17 Step 3 expanded canonical Phase 1 specialties to at least 30 keywords, 20 aliases, and 10 clues per specialty."
+  - "2026-05-17 critical_care was refined with required_any gating so pneumonia, heart failure, or AKI alone do not select critical care without shock, ventilator, vasopressor, ICU-level care, or severe instability."
+  - "2026-05-17 Step 4 changed clinical_specialty_map.yml to a formal specialties mapping keyed by canonical specialty id, with consistent strong_keywords, aliases, weak_clues, medications, labs_imaging, procedures, negative_context, and legacy_aliases fields."
+  - "The original extracted specialty list is retained under legacy_specialties for backward reference; runtime classification reads the formal specialties mapping."
+  - "2026-05-17 Step 5 verified each canonical specialty meets Phase 1 minimum density after the formal mapping change, and validator/tests now reject selected broad clue-only terms in strong_keywords."
+  - "2026-05-17 Step 6 changed runtime classification to deterministic weighted scoring from clinical_specialty_map.yml and literature_taxonomy_approved.yml only; candidates remain harvest-only and are not read by runtime classification."
+  - "2026-05-17 Step 7 changed taxonomy/scripts/classify_soap.py to emit the formal classification.json shape with primary/secondary specialties, numeric confidence, scores, matched terms, negative matches, suggested Obsidian folder, and reason summary."
+  - "2026-05-17 Step 8 integrated Obsidian export with YAML deterministic classification.json as the first routing source, while preserving the existing lightweight Obsidian keyword inference as fallback when taxonomy/classification fails."
+  - "2026-05-17 Step 9 expanded validate_taxonomy.py to check clinical_specialty_map structure, alias conflicts, vague strong keywords, approved taxonomy specialty_primary references, confidence range, and source_trace metadata."
+  - "2026-05-17 Step 10 refreshed sample SOAP fixtures and expected outputs for cardiology, pulmonology, nephrology, infectious disease, and critical care; critical care septic shock with norepinephrine/intubation is locked to primary critical_care over infectious_disease."

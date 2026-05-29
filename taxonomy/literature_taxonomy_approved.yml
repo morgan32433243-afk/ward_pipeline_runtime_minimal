@@ -1,0 +1,563 @@
+version: '1.0'
+taxonomy_type: literature_taxonomy
+description: Approved Phase 1 disease/topic taxonomy extracted from existing ward_pipeline.literature
+  constants.
+items:
+- kind: diagnosis
+  label: hydrosalpinx
+  keywords:
+  - hydrosalpinx
+  - 輸卵管水腫
+  - 輸卵管積水
+  specialty_primary: obstetrics_gynecology
+  confidence: 0.8
+  source_trace:
+  - phase1_obgyn_infertility_fix
+- kind: diagnosis
+  label: tubal_factor_infertility
+  keywords:
+  - tubal factor infertility
+  - infertility
+  - 不孕
+  - 輸卵管因素
+  specialty_primary: obstetrics_gynecology
+  confidence: 0.8
+  source_trace:
+  - phase1_obgyn_infertility_fix
+- kind: diagnosis
+  label: ovarian_endometrioma
+  obsidian_label: endometrioma
+  keywords:
+  - ovarian endometrioma
+  - endometrioma
+  - chocolate cyst
+  - 巧克力囊腫
+  specialty_primary: obstetrics_gynecology
+  confidence: 0.8
+  source_trace:
+  - phase1_obgyn_infertility_fix
+- kind: diagnosis
+  label: stemi_acs
+  keywords:
+  - stemi
+  - acute coronary syndrome
+  - acs
+  - myocardial infarction
+  - 心肌梗塞
+  specialty_primary: cardiology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: sepsis_shock
+  obsidian_label: sepsis
+  keywords:
+  - sepsis
+  - septic shock
+  - 敗血症
+  - 感染性休克
+  specialty_primary: critical_care
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: bacteremia
+  keywords:
+  - bacteremia
+  - positive blood culture
+  - blood culture positive
+  specialty_primary: infectious_disease
+  confidence: 0.8
+  source_trace:
+  - phase1_step10_sample_case
+- kind: diagnosis
+  label: possible_subconjunctival_hemorrhage
+  obsidian_label: subconjunctival hemorrhage
+  keywords:
+  - subconjunctival hemorrhage
+  - subconjunctival bleed
+  - eye hemorrhage
+  - red eye hemorrhage
+  specialty_primary: general_internal_medicine
+  confidence: 0.8
+  source_trace:
+  - phase1_eye_bleed_fix
+- kind: diagnosis
+  label: internal_hemorrhoids
+  obsidian_label: hemorrhoids
+  keywords:
+  - internal hemorrhoids
+  specialty_primary: gastroenterology_hepatology
+  confidence: 0.8
+  source_trace:
+  - phase1_hemorrhoid_fix
+- kind: diagnosis
+  label: longstanding_external_hemorrhoids
+  obsidian_label: hemorrhoids
+  keywords:
+  - longstanding external hemorrhoids
+  specialty_primary: gastroenterology_hepatology
+  confidence: 0.8
+  source_trace:
+  - phase1_hemorrhoid_fix
+- kind: diagnosis
+  label: symptomatic_external_hemorrhoids
+  obsidian_label: hemorrhoids
+  keywords:
+  - symptomatic external hemorrhoids
+  specialty_primary: gastroenterology_hepatology
+  confidence: 0.8
+  source_trace:
+  - phase1_hemorrhoid_fix
+- kind: diagnosis
+  label: thermal_injury_burn
+  obsidian_label: burn
+  keywords:
+  - burn injury
+  - scald injury
+  - scald burn
+  - thermal injury
+  - 燙傷
+  - 燒燙傷
+  specialty_primary: general_surgery
+  confidence: 0.8
+  source_trace:
+  - phase1_burn_route_fix
+- kind: diagnosis
+  label: acute_stroke
+  obsidian_label: stroke
+  keywords:
+  - stroke
+  - ischemic stroke
+  - infarction
+  - nihss
+  - aphasia
+  - 腦中風
+  specialty_primary: neurology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: intracranial_hemorrhage
+  keywords:
+  - intracerebral hemorrhage
+  - intracranial hemorrhage
+  - subarachnoid hemorrhage
+  - subdural hematoma
+  - epidural hematoma
+  - 顱內出血
+  - 腦出血
+  specialty_primary: neurology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: hydrocephalus_shunt
+  keywords:
+  - hydrocephalus
+  - vp shunt
+  - ventriculostomy
+  - 水腦
+  - 腦室引流
+  specialty_primary: neurosurgery
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: pulmonary_embolism
+  keywords:
+  - pulmonary embolism
+  - pe
+  - ctpa
+  - 肺栓塞
+  specialty_primary: pulmonology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: dka_hhs
+  keywords:
+  - dka
+  - hhs
+  - diabetic ketoacidosis
+  - 酮酸中毒
+  - 高血糖高滲
+  specialty_primary: endocrinology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: upper_gi_bleed
+  keywords:
+  - upper gi bleed
+  - hematemesis
+  - melena
+  - 吐血
+  - 黑便
+  specialty_primary: gastroenterology_hepatology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: hyperkalemia
+  keywords:
+  - hyperkalemia
+  - 高血鉀
+  specialty_primary: nephrology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: pcp_pneumonia
+  obsidian_label: pcp
+  keywords:
+  - pneumocystis jirovecii
+  - pcp
+  - pneumocystis
+  specialty_primary: infectious_disease
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: hiv
+  keywords:
+  - hiv
+  specialty_primary: infectious_disease
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: hypoxemia
+  keywords:
+  - hypoxemia
+  - hypoxemic
+  - spo2
+  - oxygen
+  specialty_primary: pulmonology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: pneumonia
+  keywords:
+  - pneumonia
+  - interstitial infiltrates
+  - infiltrates
+  - 肺炎
+  specialty_primary: pulmonology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: heart_failure
+  obsidian_label: heart failure
+  keywords:
+  - heart failure
+  - pulmonary edema
+  - 心衰竭
+  specialty_primary: cardiology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: acute_kidney_injury
+  obsidian_label: acute kidney injury
+  keywords:
+  - acute kidney injury
+  - aki
+  - 腎衰竭
+  specialty_primary: nephrology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: gi_bleed
+  obsidian_label: gi bleed
+  keywords:
+  - gi bleed
+  - melena
+  - hematemesis
+  specialty_primary: gastroenterology_hepatology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: leukemia
+  keywords:
+  - leukemia
+  - 白血病
+  specialty_primary: hematology_oncology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: lymphoma
+  keywords:
+  - lymphoma
+  - 淋巴癌
+  specialty_primary: hematology_oncology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: multiple_myeloma
+  keywords:
+  - multiple myeloma
+  - 多發性骨髓瘤
+  specialty_primary: hematology_oncology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: febrile_neutropenia
+  keywords:
+  - neutropenic fever
+  - febrile neutropenia
+  - 嗜中性球低下發燒
+  specialty_primary: hematology_oncology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: pancytopenia
+  keywords:
+  - pancytopenia
+  - 全血球低下
+  specialty_primary: hematology_oncology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: thrombocytopenia
+  keywords:
+  - thrombocytopenia
+  - 血小板低下
+  specialty_primary: hematology_oncology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: anemia
+  keywords:
+  - anemia
+  - 貧血
+  specialty_primary: hematology_oncology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: sle
+  keywords:
+  - sle
+  - systemic lupus erythematosus
+  - 紅斑性狼瘡
+  specialty_primary: rheumatology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: rheumatoid_arthritis
+  keywords:
+  - rheumatoid arthritis
+  - 類風濕
+  specialty_primary: rheumatology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: vasculitis
+  keywords:
+  - vasculitis
+  - 血管炎
+  specialty_primary: rheumatology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: gout
+  keywords:
+  - gout
+  - crystal arthritis
+  - 痛風
+  specialty_primary: rheumatology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: lupus_nephritis
+  keywords:
+  - lupus nephritis
+  - 狼瘡腎炎
+  specialty_primary: rheumatology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: acute_hepatitis
+  keywords:
+  - hepatitis
+  - acute hepatitis
+  - 肝炎
+  specialty_primary: gastroenterology_hepatology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: acute_liver_failure
+  keywords:
+  - acute liver failure
+  - 肝衰竭
+  specialty_primary: gastroenterology_hepatology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: cirrhosis_complication
+  keywords:
+  - cirrhosis
+  - hepatic encephalopathy
+  - 肝硬化
+  - 肝昏迷
+  specialty_primary: gastroenterology_hepatology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: cholangitis
+  keywords:
+  - cholangitis
+  - 膽管炎
+  specialty_primary: gastroenterology_hepatology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: cholecystitis
+  keywords:
+  - cholecystitis
+  - 膽囊炎
+  specialty_primary: gastroenterology_hepatology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: choledocholithiasis
+  keywords:
+  - choledocholithiasis
+  - 總膽管結石
+  specialty_primary: gastroenterology_hepatology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: pancreatitis
+  keywords:
+  - pancreatitis
+  - 胰臟炎
+  specialty_primary: gastroenterology_hepatology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: hepatocellular_carcinoma
+  keywords:
+  - hepatocellular carcinoma
+  - hcc
+  - 肝癌
+  specialty_primary: gastroenterology_hepatology
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: appendicitis
+  keywords:
+  - appendicitis
+  - 闌尾炎
+  specialty_primary: general_surgery
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: bowel_obstruction
+  keywords:
+  - bowel obstruction
+  - ileus
+  - 腸阻塞
+  specialty_primary: general_surgery
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: peritonitis
+  keywords:
+  - peritonitis
+  - 腹膜炎
+  specialty_primary: general_surgery
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: diverticulitis
+  keywords:
+  - diverticulitis
+  - 憩室炎
+  specialty_primary: general_surgery
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: hernia
+  keywords:
+  - hernia
+  - 疝氣
+  specialty_primary: general_surgery
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+- kind: diagnosis
+  label: surgical_site_infection
+  keywords:
+  - surgical site infection
+  - wound infection
+  - 傷口感染
+  specialty_primary: general_surgery
+  confidence: 0.8
+  source_trace:
+  - phase1_extracted_existing_literature_constants
+problem_keywords:
+- label: fever
+  keywords:
+  - fever
+- label: cough
+  keywords:
+  - cough
+- label: weight loss
+  keywords:
+  - weight loss
+- label: bilateral interstitial infiltrates
+  keywords:
+  - bilateral interstitial infiltrates
+- label: spo2 91%
+  keywords:
+  - spo2 91%
+  - spo2 91
+- label: supplemental oxygen
+  keywords:
+  - supplemental oxygen
+  - nasal cannula
+  - oxygen
+- label: hiv test pending
+  keywords:
+  - hiv combo test
+  - cd4
+  - hiv status
+- label: pcp treatment
+  keywords:
+  - tmp-smx
+  - bactrim
+  - prednisolone
+  - pcp test
+- label: bronchoscopy deferred
+  keywords:
+  - bronchoscopy
+  - defer bronchoscopy

@@ -13,6 +13,42 @@ It processes an audio recording into:
 
 This repository intentionally excludes private launchd jobs, local handoff notes, backups, and machine-specific paths.
 
+## Windows Quick Start
+
+If you are on Windows, do this first:
+
+1. Install Python 3.11 and `ffmpeg`.
+2. Open PowerShell in this repo.
+3. Run:
+
+```powershell
+.\install-windows.ps1
+.\deploy-windows.ps1
+```
+
+4. Edit `.env` if needed.
+5. Check the setup:
+
+```powershell
+.\.venv\Scripts\python.exe ward_cli.py config
+```
+
+6. Process one audio file:
+
+```powershell
+.\.venv\Scripts\python.exe ward_cli.py process C:\path\to\audio.m4a
+```
+
+7. For continuous monitoring:
+
+```powershell
+.\.venv\Scripts\python.exe ward_cli.py watch-incoming --incoming-dir C:\path\to\incoming
+```
+
+Chinese quick start:
+
+- [`docs/快速上手.md`](docs/快速上手.md)
+
 ## Requirements
 
 - macOS, Linux, or Windows

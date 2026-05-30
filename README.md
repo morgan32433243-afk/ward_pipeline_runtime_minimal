@@ -15,26 +15,26 @@ This repository intentionally excludes private launchd jobs, local handoff notes
 
 ## Requirements
 
-- macOS or Linux
+- macOS, Linux, or Windows
 - Python 3.11
 - `ffmpeg`
 - Codex CLI available as `codex` if using `--allow-external-llm`
 - Hugging Face token for WhisperX diarization
 - Optional Discord bot token for Discord delivery
 
-On macOS:
+On macOS or Linux:
 
 ```bash
-brew install python@3.11 ffmpeg
+./install.sh
+```
+
+On Windows:
+
+```powershell
+.\install-windows.ps1
 ```
 
 ## Install
-
-```bash
-git clone <YOUR_REPO_URL>
-cd ward_pipeline_runtime_public
-./install.sh
-```
 
 Then edit `.env`:
 
@@ -51,6 +51,12 @@ Check resolved config:
 .venv/bin/python ward_cli.py config
 ```
 
+On Windows:
+
+```powershell
+.\.venv\Scripts\python.exe ward_cli.py config
+```
+
 ## Run One Audio File
 
 Basic run:
@@ -59,12 +65,27 @@ Basic run:
 .venv/bin/python ward_cli.py process /path/to/audio.m4a
 ```
 
+On Windows:
+
+```powershell
+.\.venv\Scripts\python.exe ward_cli.py process C:\path\to\audio.m4a
+```
+
 Full run with LLM, literature, Obsidian export, and Discord delivery:
 
 ```bash
 .venv/bin/python ward_cli.py process /path/to/audio.m4a \
   --allow-external-llm \
   --export-obsidian \
+  --deliver-target discord:DISCORD_CHANNEL_ID
+```
+
+On Windows:
+
+```powershell
+.\.venv\Scripts\python.exe ward_cli.py process C:\path\to\audio.m4a `
+  --allow-external-llm `
+  --export-obsidian `
   --deliver-target discord:DISCORD_CHANNEL_ID
 ```
 
@@ -169,6 +190,10 @@ The bot must have permission to post in that channel.
 - `tests/`: regression tests
 - `.env.example`: local configuration template
 - `requirements.txt`: Python dependencies
+
+## 中文快速上手
+
+- [`docs/快速上手.md`](docs/快速上手.md)
 
 ## Tests
 

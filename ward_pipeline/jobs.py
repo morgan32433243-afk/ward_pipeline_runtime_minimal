@@ -23,6 +23,7 @@ from .clinical_facts import (
 )
 from .config import WardConfig, load_config
 from .codex_runtime import run_codex_exec
+from .platform import is_windows, runtime_root, stt_python_path
 from .literature import (
     LITERATURE_TAXONOMY_CANDIDATES_FILE,
     openevidence_login as _openevidence_login,
@@ -113,10 +114,10 @@ HEALTH_SUMMARY_FILE = "health.summary.txt"
 DEFAULT_HEALTH_DISCORD_TARGET = os.environ.get("WARD_HEALTH_DISCORD_TARGET", "")
 OBSIDIAN_AUTO_ROUTE_MIN_CONFIDENCE = 0.7
 AUTO_LITERATURE_MIN_CONFIDENCE = 0.4
-WARD_RUNTIME_ROOT = Path(os.environ.get("WARD_RUNTIME_ROOT", Path(__file__).resolve().parents[1])).expanduser().resolve()
+WARD_RUNTIME_ROOT = Path(os.environ.get("WARD_RUNTIME_ROOT", runtime_root())).expanduser().resolve()
 HERMES_BIN = os.environ.get("HERMES_BIN", "hermes")
 WARD_BIN = os.environ.get("WARD_BIN", "ward")
-WARD_STT_PYTHON = Path(os.environ.get("WARD_STT_PYTHON", str(WARD_RUNTIME_ROOT / ".venv" / "bin" / "python")))
+WARD_STT_PYTHON = stt_python_path(WARD_RUNTIME_ROOT)
 RETENTION_KEEP_JOB_FILES = {
     HERMES_RESULT_FILE,
     SOAP_NOTE_FILE,
@@ -561,6 +562,8 @@ def _delivery_messages(job_dir: Path, job_id: str) -> list[str]:
 def _notify_local_delivery_failure(job_id: str) -> dict:
     title = "Ward SOAP delivery failed"
     message = f"SOAP 回傳失敗，請稍後重送：{job_id}"
+    if is_windows():
+        return {"ok": False, "method": "unsupported_platform", "error": "desktop notification is only implemented on macOS"}
     try:
         completed = subprocess.run(
             [
@@ -2317,7 +2320,7 @@ def transcribe(config: WardConfig, job_id: str, model: str | None = None) -> dic
 
     env = os.environ.copy()
     env["PYTHONPATH"] = str(WARD_RUNTIME_ROOT)
-    env["PATH"] = f"{WARD_STT_PYTHON.parent}:{env.get('PATH', '')}"
+    env["PATH"] = os.pathsep.join([str(WARD_STT_PYTHON.parent), env.get("PATH", "")])
     # Use already-cached HF/Transformers models by default. Online metadata
     # checks can add minutes to every fresh STT subprocess on this machine.
     env.setdefault("HF_HUB_OFFLINE", "1")
@@ -3131,7 +3134,7 @@ def _check_network() -> dict:
 def _check_stt_environment() -> dict:
     env = os.environ.copy()
     env["PYTHONPATH"] = str(WARD_RUNTIME_ROOT)
-    env["PATH"] = f"{WARD_STT_PYTHON.parent}:{env.get('PATH', '')}"
+    env["PATH"] = os.pathsep.join([str(WARD_STT_PYTHON.parent), env.get("PATH", "")])
     code = (
         "import importlib.util, shutil; "
         "from ward_pipeline.stt_whisperx import transcribe_with_whisperx; "
@@ -3143,7 +3146,7 @@ def _check_stt_environment() -> dict:
 def _check_whisper_modules() -> dict:
     env = os.environ.copy()
     env["PYTHONPATH"] = str(WARD_RUNTIME_ROOT)
-    env["PATH"] = f"{WARD_STT_PYTHON.parent}:{env.get('PATH', '')}"
+    env["PATH"] = os.pathsep.join([str(WARD_STT_PYTHON.parent), env.get("PATH", "")])
     code = (
         "import importlib.util, json; "
         "result = {"
@@ -3171,7 +3174,7 @@ def _check_whisper_modules() -> dict:
 def _check_diarization() -> dict:
     env = os.environ.copy()
     env["PYTHONPATH"] = str(WARD_RUNTIME_ROOT)
-    env["PATH"] = f"{WARD_STT_PYTHON.parent}:{env.get('PATH', '')}"
+    env["PATH"] = os.pathsep.join([str(WARD_STT_PYTHON.parent), env.get("PATH", "")])
     code = """
 import importlib.util
 import json

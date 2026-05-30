@@ -4,18 +4,25 @@ set -euo pipefail
 WARD_ROOT="${WARD_ROOT:-$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)}"
 cd "$WARD_ROOT"
 
-if ! command -v python3.11 >/dev/null 2>&1; then
-  echo "python3.11 is required. On macOS: brew install python@3.11" >&2
+PYTHON_BIN=""
+if command -v python3.11 >/dev/null 2>&1; then
+  PYTHON_BIN="$(command -v python3.11)"
+elif command -v python3 >/dev/null 2>&1; then
+  PYTHON_BIN="$(command -v python3)"
+elif command -v python >/dev/null 2>&1; then
+  PYTHON_BIN="$(command -v python)"
+else
+  echo "Python 3.11 is required." >&2
   exit 1
 fi
 
 if ! command -v ffmpeg >/dev/null 2>&1; then
-  echo "ffmpeg is required. On macOS: brew install ffmpeg" >&2
+  echo "ffmpeg is required. Install it and ensure it is on PATH." >&2
   exit 1
 fi
 
 echo "Creating virtual environment in $WARD_ROOT/.venv"
-python3.11 -m venv .venv
+"$PYTHON_BIN" -m venv .venv
 source .venv/bin/activate
 
 echo "Installing Python dependencies"
